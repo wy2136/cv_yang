@@ -1,0 +1,7 @@
+# latex temporary files
+*.aux
+*.log
+*.out
+*.gz 
+
+*.DS_Store
