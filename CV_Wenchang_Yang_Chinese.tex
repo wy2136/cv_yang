@@ -1,4 +1,5 @@
 \documentclass[11pt]{article}
+
 \setlength{\parskip}{-1ex}
 \linespread{1.2} 
 
@@ -26,8 +27,8 @@
 \definecolor{gray}{gray}{0.5}
 \pagestyle{fancy}
 \fancyhf{}
-\lhead{\textcolor{headerColor}{\sffamily 简历：杨文昌, PhD}}
-\rfoot{\textcolor{footerColor}{\sffamily 第\thepage{}页，共\pageref{LastPage}页}}
+\lhead{\textcolor{headerColor}{\sffamily 简历：杨文昌}}
+\cfoot{\textcolor{footerColor}{\sffamily 第\thepage{}页，共\pageref{LastPage}页}}
 \renewcommand{\headrulewidth}{0.1pt}
 \renewcommand{\headrule}{\color{gray} \hrule}
 
@@ -49,7 +50,7 @@
 
 % %%%%%%%% new commands
 
-\newcommand{\uci}{\href{http://www.uci.edu}{University of California, Irvine}}
+\newcommand{\uci}{\href{http://www.uci.edu}{University of California at Irvine}}
 \newcommand{\cu}{\href{http://www.columbia.edu}{Columbia University}}
 \newcommand{\pku}{\href{http://english.pku.edu.cn}{Peking University}}
 \newcommand{\benkui}{\href{http://www.phy.pku.edu.cn/personnel/das/bktan.xml}{谭本馗}}
@@ -76,8 +77,11 @@
 \newcommand{\contact}[1]{ {\centering #1} }
 \newcommand{\doi}[1]{ doi: \href{https://doi.org/#1}{#1} }
 
+\renewcommand{\familydefault}{\sfdefault}
+
 \begin{document}
-\begin{CJK*}{UTF8}{gkai}%{gbsn}
+\begin{CJK*}{UTF8}{gkai}
+%\begin{CJK*}{UTF8}{gbsn}
 
 % choose a version with or without photo
 \newcommand{\titleMinipage}[1]
@@ -85,56 +89,156 @@
 	\ifthenelse{\equal{#1}{withoutPhoto}}{
 		\name{杨文昌}
 		\contact{
-			博士后学者 \\
-			加州大学尔湾分校 地球系统系 \\
-			地址： 2101E Croul Hall, Irvine, CA 92697, US \\ 
-			电子邮件：yang.wenchang@uci.edu \\
-			电话：+1 (646)801-8086 \\
-			个人主页：\url{http://www.ess.uci.edu/~wenchay}\\
+			博士后 \\
+			普林斯顿大学 \\
+			电子邮件：\url{wenchang@princeton.edu} \\
+			电话：\url{+1 (646)801-8086} \\
+			个人主页：\url{https://scholar.princeton.edu/wenchang}\\
 		}
+%		\contact{
+%			博士后学者 \\
+%			加州大学尔湾分校 地球系统系 \\
+%			地址： 2101F Croul Hall, Irvine, CA 92697, US \\ 
+%			电子邮件：yang.wenchang@uci.edu \\
+%			电话：+1 (646)801-8086 \\
+%			个人主页：\url{http://www.ess.uci.edu/~wenchay}\\
+%		}
 	}{}
 	
 	\ifthenelse{\equal{#1}{withPhoto}}{
-		\name{\flushleft 杨文昌}
-		\contact{\flushleft
-			博士后学者 \\
-			加州大学尔湾分校 地球系统系 \\
-			地址： 2101E Croul Hall, Irvine, CA 92697, US \\ 
-			电子邮件：yang.wenchang@uci.edu \\
-			电话：+1 (646)801-8086 \\
-			个人主页：\url{http://www.ess.uci.edu/~wenchay}\\
-		}
-		\vspace{-0.25\textwidth}\hfill
-		\includegraphics[width=0.25\textwidth]{YangTieSquare.jpg}
-		\vspace{-.0\textwidth}
+%		\vspace{-0.25\textwidth}
+		\hspace{-4ex}
+		\includegraphics[width=1.5in]{Yang.jpg}
+%		\vspace{-.0\textwidth}
+
+		\vspace{-1.3in}\hspace{1.6in}
+		\begin{minipage}{6in}
+            		\contact{\flushleft 
+				{\Large\bf杨文昌}\\
+            			博士后 \\
+            			普林斯顿大学 \\ 
+            			电子邮件：\url{wenchang@princeton.edu} \\ 
+            			电话：\url{+1(646)801-8086} \\  
+            			个人主页：\url{https://scholar.princeton.edu/wenchang}\\ 
+            		}
+		\end{minipage}
+%		\contact{\flushleft
+%			博士后学者 \\
+%			加州大学尔湾分校 地球系统系 \\
+%			地址： 2101F Croul Hall, Irvine, CA 92697, US \\ 
+%			电子邮件：yang.wenchang@uci.edu \\
+%			电话：+1 (646)801-8086 \\
+%			个人主页：\url{http://www.ess.uci.edu/~wenchay}\\
+%		}
+%		\vspace{-0.25\textwidth}\hfill
+%		\includegraphics[width=0.25\textwidth]{Yang.jpg}
+%		\vspace{-.0\textwidth}
 	}{}
 }
-%\titleMinipage{withPhoto}
-\titleMinipage{withoutPhoto}
+\titleMinipage{withPhoto}
+%\titleMinipage{withoutPhoto}
 
 \section{研究领域}
 \begin{itemize}[leftmargin=4ex,label={}, noitemsep, nolistsep]
-	\item 北极气候及变化, 水汽输送,
-	 干旱与降水, 东非气候,
-	 ITCZ, 全球季风, 风暴路径, 理想大气模式
+	\item 北极气候, 东非降水与干旱
+	 \item 气候变率, 气候动力，气候变化, 极端天气与气候
+	 \item ITCZ, 全球季风, 中纬度风暴路径, 理想大气模式
 \end{itemize}
 
 
 \section{教育背景}
 \begin{itemize}[leftmargin=10ex,label={}, noitemsep, nolistsep]
-	\item[2014] 哥伦比亚大学地球与环境科学系哲学博士
+	\item[2014] 博士, 哥伦比亚大学 (Columbia University)
 	\begin{itemize}[leftmargin=0ex,label={},noitemsep,nolistsep]
-		博士论文: \phdThesis{}.  
-		导师: \richard{} 教授,  \cane{} 教授
+		\item 博士论文: \phdThesis{}. 导师: \richard{} 教授,  \cane{} 教授
 		\end{itemize}
-	\item[2011] 哥伦比亚大学地球与环境科学系哲学硕士
-	\item[2007] 北京大学物理学院大气科学系理学硕士。导师: \benkui{}教授
-	\item[2004] 北京大学物理学院大气科学系理学学士
+%	\item[2011] 硕士, 哥伦比亚大学 (Columbia University)
+	\item[2007] 硕士, 北京大学
+	\item[2004] 学士, 北京大学
 	\end{itemize}
 
 
+\section{工作经历}
+\begin{itemize}[leftmargin=10ex,label={},noitemsep,nolistsep]
+	\item[2017] 12 -- , 博士后, 普林斯顿大学
+	
+	\item[2015] 01 -- 2017 11, 博士后, 加州大学
+%	\begin{itemize}[leftmargin=0ex,label={},noitemsep,nolistsep]
+%		\item  导师: \gudrun{} 教授
+%		\end{itemize}
+%	\item[2014] 11 -- 2014 12, 哥伦比亚大学博士后
+%	\begin{itemize}[leftmargin=0ex,label={},noitemsep,nolistsep]
+%		\item  导师: Bradfield Lyon 博士
+%		\end{itemize}
+%	\item[2007] 09 -- 2014 10,  哥伦比亚大学助研
+%	\begin{itemize}[leftmargin=0ex,label={},noitemsep,nolistsep]
+%		\item  导师: \richard{} 教授，\cane{} 教授
+%		\end{itemize}
+%	\item[2004] 09 -- 2007 06, 北京大学助研
+%	\begin{itemize}[leftmargin=0ex,label={},noitemsep,nolistsep]
+%		\item  导师: 谭本馗教授
+%		\end{itemize}
+	\end{itemize}
+
+
+\section{获奖经历}
+\begin{itemize}[leftmargin=10ex,label={},noitemsep,nolistsep]
+	\item[2007] 哥伦比亚大学艺术与科学研究生院奖学金 (Faculty Fellowship)
+	
+	\item[\phantom{2007}] 北京大学物理学院钟盛标研究生学术论坛二等奖 
+	
+	\item[2005] 北京大学五四奖学金	
+	
+	\item[2004] 北京市优秀毕业生
+	
+	\item[\phantom{2004}] 北京大学优秀毕业生
+		
+	\item[2002] 北京大学三好学生
+	
+	\item[2001] 北京大学三好学生
+	
+	\item[2001]-- 2004, 北京大学唐仲英基金会奖学金
+		
+	\item[2000] 江苏省三好学生
+	
+	\item[1999] 全国高中数学联赛江苏省一等奖
+
+	\item[\phantom{1999}] 全国高中生物奥林匹克竞赛江苏省二等奖
+
+	\item[\phantom{1999}] 全国高中物理奥林匹克竞赛江苏省三等奖
+\end{itemize}
+
+
+\section{学术组织}
+\begin{itemize}[leftmargin=4ex,label={},noitemsep,nolistsep]
+	\item 美国地球物理学会 (AGU) 会员 
+	\item 美国气象学会 (AMS) 会员
+\end{itemize}
+
+
+\section{学术兼职} 
+\begin{itemize}[leftmargin=4ex,label={},noitemsep,nolistsep]
+	\item 审稿杂志
+    	\begin{itemize}[leftmargin=4ex,label={},noitemsep,nolistsep]
+	\item \textit{Nature Climate Change, Scientific Reports, Climate Dynamics}
+    	\item \textit{Journal of Climate, Journal of the Atmospheric Sciences}
+	\item \textit{Geophysical Research Letters, Journal of Geophysical Research-Atmospheres}
+	\item \textit{Quarterly Journal of the Royal Meteorological Society, International Journal of Climatology}
+	\item \textit{Journal of Applied Meteorology and Climatology, Advances in Atmospheric Sciences}	
+    	\end{itemize}
+	
+	\item 其它兼职
+	\begin{itemize}[leftmargin=10ex,label={},noitemsep,nolistsep]
+		\item[2015] Judge for the Outstanding Student Paper Awards in the AGU Fall Meeting
+		\item[2010]-- 2011, Coordinator for the Division of Ocean and Climate Physics Seminars at Lamont, Columbia University
+	\end{itemize}
+\end{itemize}
+
+
 \section{学术论文}
-\begin{itemize}[leftmargin=10ex,label={}, noitemsep, nolistsep]
+\begin{itemize}[leftmargin=10ex,label={}, itemsep=1ex]
+    \item[2017] \textbf{Yang,~W.}, G.~Magnusdottir (2017): Springtime Extreme Moisture Transport into the Arctic and its Impact on Sea Ice Concentration. \emph{J. Geophys. Res. Atmos.}, \textbf{122}, \doi{10.1002/2016JD026324}
+    
 	\item[2016] \textbf{Yang,~W.}, G.~Magnusdottir (2016): Interannual Signature in Daily ITCZ States in the East Pacific in Boreal Spring, \newblock \emph{J. Clim.},  \textbf{29}, 8013--8025, \doi{10.1175/JCLI-D-16-0395.1}
 	
 	\item[2015] \textbf{Yang, W.}, R.~Seager, M.~A.~Cane, and B.~Lyon (2015): The Rainfall Annual Cycle Bias over East Africa in CMIP5 Coupled Climate Models.
@@ -164,53 +268,9 @@
 
 \section{论文手稿}
 \begin{itemize}[itemsep=0.3em,parsep=0pt, leftmargin=10ex]
-	\item[2017] \textbf{Yang,~W.}, G.~Magnusdottir (2017): Springtime Moisture Transport and September Arctic Sea Ice in Observations and Models. \textbf{in preparation}
+	\item[2017] \textbf{Yang,~W.}, G.~Magnusdottir (2017): Springtime Moisture Transport and September Arctic Sea Ice in Observations and Models. \textbf{in review}
 	
-	\item[2017] \textbf{Yang,~W.}, G.~Magnusdottir (2017): Springtime Extreme Moisture Transport into the Arctic through the Atlantic Pathway. \emph{J. Geophys. Res. Atmos.}, \textbf{in revision}
 \end{itemize}
-
-
-\section{研究经历}
-\begin{itemize}[leftmargin=10ex,label={},noitemsep,nolistsep]
-	\item[2015] 01 -- 现在, 加州大学尔湾分校博士后学者
-%	\begin{itemize}[leftmargin=0ex,label={},noitemsep,nolistsep]
-%		\item  导师: \gudrun{} 教授
-%		\end{itemize}
-	\item[2014] 11 -- 2014 12, 哥伦比亚大学博士后
-%	\begin{itemize}[leftmargin=0ex,label={},noitemsep,nolistsep]
-%		\item  导师: Bradfield Lyon 博士
-%		\end{itemize}
-	\item[2007] 09 -- 2014 10,  哥伦比亚大学助研
-%	\begin{itemize}[leftmargin=0ex,label={},noitemsep,nolistsep]
-%		\item  导师: \richard{} 教授，\cane{} 教授
-%		\end{itemize}
-	\item[2004] 09 -- 2007 06, 北京大学助研
-%	\begin{itemize}[leftmargin=0ex,label={},noitemsep,nolistsep]
-%		\item  导师: 谭本馗教授
-%		\end{itemize}
-	\end{itemize}
-
-
-\section{授课经历} 
-\begin{itemize}[leftmargin=10ex,label={},noitemsep,nolistsep]
-	\item[2009] 秋季学期, 哥伦比亚大学助教
-	\begin{itemize}[leftmargin=0ex,label={},noitemsep,nolistsep]
-		\item  课程：\textit{Quantitative Models of Climate-Sensitive Natural and Human Systems}
-%		\item Instructors: Prof. Mingfang Ting and Prof. Anthony G. Barnston 
-		\end{itemize}
-		
-	\item[2008] 秋季学期, 哥伦比亚大学助教
-	\begin{itemize}[leftmargin=0ex,label={},noitemsep,nolistsep]
-		\item 课程：\textit{Quantitative Models of Climate-Sensitive Natural and Human Systems}
-%		\item Instructors: Prof. Mingfang Ting and Prof. Anthony G. Barnston 
-		\end{itemize}
-		
-	\item[2006] 春季学期, 北京大学助教
-	\begin{itemize}[leftmargin=0ex,label={},noitemsep,nolistsep]
-		\item 课程： 大气动力学 % \textit{Atmospheric Dynamics}
-%		\item Instructor: Prof. Benkui Tan
-		\end{itemize}
-	\end{itemize}
 
 
 
@@ -295,115 +355,88 @@
 \end{itemize}
 
 
-\section{学术兼职} 
-\begin{itemize}[leftmargin=4ex,label={},noitemsep,nolistsep]
-	\item 审稿杂志
-    	\begin{itemize}[leftmargin=4ex,label={},noitemsep,nolistsep]
-	\item \textit{Nature Climate Change, Climate Dynamics}
-    	\item \textit{Journal of Climate, Journal of the Atmospheric Sciences}
-	\item \textit{Geophysical Research Letters, Journal of Geophysical Research-Atmospheres}
-	\item \textit{Quarterly Journal of the Royal Meteorological Society, International Journal of Climatology}
-	\item \textit{Journal of Applied Meteorology and Climatology}	
-    	\end{itemize}
-	
-	\item 其它兼职
-	\begin{itemize}[leftmargin=10ex,label={},noitemsep,nolistsep]
-		\item[2015] Judge for the Outstanding Student Paper Awards in the AGU Fall Meeting
-		\item[2010]-- 2011, Coordinator for the Division of Ocean and Climate Physics Seminars at Lamont, Columbia University
-	\end{itemize}
-\end{itemize}
-	
 
-\section{学术组织}
-\begin{itemize}[leftmargin=4ex,label={},noitemsep,nolistsep]
-	\item 美国地球物理学会 (AGU) 会员 
-	\item 美国气象学会 (AMS) 会员
-\end{itemize}
-
-
-\section{获奖经历}
+\section{授课经历} 
 \begin{itemize}[leftmargin=10ex,label={},noitemsep,nolistsep]
-	\item[2007] 哥伦比亚大学艺术与科学研究生院奖学金 (Faculty Fellowship)
-	
-	\item[\phantom{2007}] 北京大学物理学院钟盛标研究生学术论坛二等奖 
-	
-	\item[2005] 北京大学五四奖学金	
-	
-	\item[2004] 北京市优秀毕业生
-	
-	\item[\phantom{2004}] 北京大学优秀毕业生
+	\item[2009] 秋季学期, 哥伦比亚大学助教
+	\begin{itemize}[leftmargin=0ex,label={},noitemsep,nolistsep]
+		\item  课程：\textit{Quantitative Models of Climate-Sensitive Natural and Human Systems}
+%		\item Instructors: Prof. Mingfang Ting and Prof. Anthony G. Barnston 
+		\end{itemize}
 		
-	\item[2002] 北京大学三好学生
-	
-	\item[2001]-- 2004, 北京大学唐仲英基金会奖学金
+	\item[2008] 秋季学期, 哥伦比亚大学助教
+	\begin{itemize}[leftmargin=0ex,label={},noitemsep,nolistsep]
+		\item 课程：\textit{Quantitative Models of Climate-Sensitive Natural and Human Systems}
+%		\item Instructors: Prof. Mingfang Ting and Prof. Anthony G. Barnston 
+		\end{itemize}
 		
-	\item[2000] 江苏省三好学生
-	
-	\item[1999] 全国高中数学联赛江苏省一等奖
-
-	\item[\phantom{1999}] 全国高中生物奥林匹克竞赛江苏省二等奖
-
-	\item[\phantom{1999}] 全国高中物理奥林匹克竞赛江苏省三等奖
-\end{itemize}
+	\item[2006] 春季学期, 北京大学助教
+	\begin{itemize}[leftmargin=0ex,label={},noitemsep,nolistsep]
+		\item 课程： 大气动力学 % \textit{Atmospheric Dynamics}
+%		\item Instructor: Prof. Benkui Tan
+		\end{itemize}
+	\end{itemize}
 
 
-\section{联系人}
-\begin{itemize}[leftmargin=4ex]
-	\item Dr.~\richard{}
-	\begin{itemize}
-		\item Palisades Geophysical Institute/Lamont Research Professor 
-		\item Lamont-Doherty Earth Observatory, \cu{}
-    		\item Email: seager@ldeo.columbia.edu
-		\item Phone: +1 (845) 365-8743 
-    	 	\item Address: 104D Oceanography, PO Box 1000, 61 Route 9W, Palisades, NY 10964-8000, US 
-	 	\end{itemize}
-	
-	\item Dr.~\cane{}
-	\begin{itemize}
-		\item G. Unger Vetlesen Professor
-		\item Department of Earth and Environmental Sciences, \cu{}
-    		\item Email: mcane@ldeo.columbia.edu
-		\item Phone: +1 (845) 365-8344 
-    	 	\item Address: 105B Oceanography, PO Box 1000, 61 Route 9W, Palisades, NY 10964-8000, US 
-	 	\end{itemize}
-	
-	\item Dr.~\brad{}
-	\begin{itemize}
-		\item Associate Research Professor
-		\item University of Maine
-    		\item Email: bradfield.lyon@maine.edu
-		\item Phone: +1 (207) 581-2241
-    	 	\item Address: 210 Sawyer Environmental Research Center, Orono, ME 04469, US 
-	 	\end{itemize}
-	
-	\item Dr.~\mingfang{}
-	\begin{itemize}
-		\item Lamont Research Professor
-		\item Lamont-Doherty Earth Observatory, \cu{}
-    		\item Email: ting@ldeo.columbia.edu
-		\item Phone: +1 (845) 365-8157 
-    	 	\item Address: 104C Oceanography, PO Box 1000, 61 Route 9W, Palisades, NY 10964-8000, US 
-	 	\end{itemize}
-	
-	\item Dr.~William Boos
-	\begin{itemize}
-		\item Associate Professor
-		\item Department of Geology and Geophysics, Yale University
-    		\item Email: william.boos@yale.edu
-		\item Phone: +1 (203) 432-2627
-    	 	\item Address: P.O. Box 208109, New Haven, CT 06520-8109, US 
-	 	\end{itemize}
-		
-	\item Dr.~\gudrun{}
-	\begin{itemize}
-		\item Professor
-		\item Department of Earth System Science, \uci{}
-    		\item Email: gudrun@uci.edu
-		\item Phone: +1 (949) 824-3520
-    	 	\item Address: 3321 Croul Hall, Irvine, CA 92697-3100, US 
-	 	\end{itemize}
-	 
-	 \end{itemize}
+
+
+%\section{联系人}
+%\begin{itemize}[leftmargin=4ex]
+%	\item Dr.~\richard{}
+%	\begin{itemize}
+%		\item Palisades Geophysical Institute/Lamont Research Professor 
+%		\item Lamont-Doherty Earth Observatory, \cu{}
+%    		\item Email: seager@ldeo.columbia.edu
+%		\item Phone: +1 (845) 365-8743 
+%    	 	\item Address: 104D Oceanography, PO Box 1000, 61 Route 9W, Palisades, NY 10964-8000, US 
+%	 	\end{itemize}
+%	
+%	\item Dr.~\cane{}
+%	\begin{itemize}
+%		\item G. Unger Vetlesen Professor
+%		\item Department of Earth and Environmental Sciences, \cu{}
+%    		\item Email: mcane@ldeo.columbia.edu
+%		\item Phone: +1 (845) 365-8344 
+%    	 	\item Address: 105B Oceanography, PO Box 1000, 61 Route 9W, Palisades, NY 10964-8000, US 
+%	 	\end{itemize}
+%	
+%	\item Dr.~\brad{}
+%	\begin{itemize}
+%		\item Associate Research Professor
+%		\item University of Maine
+%    		\item Email: bradfield.lyon@maine.edu
+%		\item Phone: +1 (207) 581-2241
+%    	 	\item Address: 210 Sawyer Environmental Research Center, Orono, ME 04469, US 
+%	 	\end{itemize}
+%	
+%	\item Dr.~\mingfang{}
+%	\begin{itemize}
+%		\item Lamont Research Professor
+%		\item Lamont-Doherty Earth Observatory, \cu{}
+%    		\item Email: ting@ldeo.columbia.edu
+%		\item Phone: +1 (845) 365-8157 
+%    	 	\item Address: 104C Oceanography, PO Box 1000, 61 Route 9W, Palisades, NY 10964-8000, US 
+%	 	\end{itemize}
+%	
+%	\item Dr.~William Boos
+%	\begin{itemize}
+%		\item Associate Professor
+%		\item Department of Geology and Geophysics, Yale University
+%    		\item Email: william.boos@yale.edu
+%		\item Phone: +1 (203) 432-2627
+%    	 	\item Address: P.O. Box 208109, New Haven, CT 06520-8109, US 
+%	 	\end{itemize}
+%		
+%	\item Dr.~\gudrun{}
+%	\begin{itemize}
+%		\item Professor
+%		\item Department of Earth System Science, \uci{}
+%    		\item Email: gudrun@uci.edu
+%		\item Phone: +1 (949) 824-3520
+%    	 	\item Address: 3321 Croul Hall, Irvine, CA 92697-3100, US 
+%	 	\end{itemize}
+%	 
+%	 \end{itemize}
  
 \clearpage\end{CJK*}
 \end{document} 
