@@ -1,8 +1,8 @@
 \documentclass[11pt]{article}
 \setlength{\parskip}{-1ex}
-\linespread{1.2} 
+\linespread{1.2}
 
-% %%%%%%%%%% packages 
+% %%%%%%%%%% packages
 
 \usepackage{graphicx}
 
@@ -15,7 +15,7 @@
 \setlist[itemize]{leftmargin=4ex, label={}, noitemsep, nolistsep}
 
 \usepackage[margin=1in, top=1.2in, bottom=1in]{geometry}
-\geometry{letterpaper} 
+\geometry{letterpaper}
 
 \usepackage{fancyhdr}
 \usepackage{lastpage}
@@ -26,14 +26,14 @@
 \pagestyle{fancy}
 \fancyhf{}
 \lhead{\textcolor{headerColor}{\sffamily Curriculum Vitae: Wenchang Yang, Ph.D.}}
-\rfoot{\textcolor{footerColor}{\sffamily Page \thepage{} of \pageref{LastPage}}}
+\cfoot{\textcolor{footerColor}{\sffamily Page \thepage{} of \pageref{LastPage}}}
 \renewcommand{\headrulewidth}{0.1pt}
 \renewcommand{\headrule}{\color{gray} \hrule}
 
 % ---- use package titlesec to set formats of titles and sections
 \usepackage{titlesec}
 % \section
-\titleformat{\section}         % Customise the \section command 
+\titleformat{\section}         % Customise the \section command
 %{\Large\bf\raggedright} % Make the \section headers large (\Large),
 {\large\bf\raggedright} % Make the \section headers large (\large),
                                % small capitals (\scshape) and left aligned (\raggedright)
@@ -47,10 +47,11 @@
 {*1} % below
 
 % %%%%%%%% new commands
-
-\newcommand{\uci}{\href{http://www.uci.edu}{University of California, Irvine}}
+\newcommand{\pu}{\href{https://www.princeton.edu}{Princeton University}}
+\newcommand{\uci}{\href{http://www.uci.edu}{University of California at Irvine}}
 \newcommand{\cu}{\href{http://www.columbia.edu}{Columbia University}}
 \newcommand{\pku}{\href{http://english.pku.edu.cn}{Peking University}}
+
 \newcommand{\benkui}{\href{http://www.phy.pku.edu.cn/personnel/das/bktan.xml}{Benkui Tan}}
 \newcommand{\richard}{\href{http://www.ldeo.columbia.edu/res/div/ocp/people/seager/}{Richard Seager}}
 \newcommand{\cane}{\href{http://www.ldeo.columbia.edu/user/mcane}{Mark A. Cane}}
@@ -60,6 +61,7 @@
 \newcommand{\brad}{\href{http://climatechange.umaine.edu/people/profile/bradfield_lyon}
 {Bradfield Lyon}}
 \newcommand{\gudrun}{\href{http://sites.uci.edu/magnusdottir}{Gudrun Magnusdottir}}
+
 \newcommand{\masterThesis}{\textit{Baroclinic Wave Packets in the Quasigeostrophic Two-layer Model}}
 \newcommand{\phdThesis}{\href{https://academiccommons.columbia.edu/catalog/ac:181305}{\textit{The Hydroclimate of East Africa: Seasonal cycle, Decadal Variability, and Human-induced Climate Change}}}
 %\newcommand{\meetingName}[1]{\textit{#1}}
@@ -68,12 +70,13 @@
 % name
 \newcommand{\name}[1]{
 	\begin{center}
-		%\LARGE\bf #1
 		\Large\bf #1
 	\end{center}
 }
 \newcommand{\contact}[1]{ {\centering #1} }
 \newcommand{\doi}[1]{ doi: \href{https://doi.org/#1}{#1} }
+
+\renewcommand{\familydefault}{\sfdefault}
 
 \begin{document}
 
@@ -83,75 +86,121 @@
 	\ifthenelse{\equal{#1}{withoutPhoto}}{
 		\name{ Wenchang Yang}
 		\contact{
-			Postdoctoral Scholar \\
-			Department of Earth System Science,
-			University of California, Irvine \\
-			2101E Croul Hall, Irvine, CA 92697, US \\ 
-			yang.wenchang@uci.edu \\
-			+1 (646)801-8086 \\
-			\url{http://www.ess.uci.edu/~wenchay}\\
+			Postdoctoral Research Associate \\
+			Department of Geosciences,
+			Princeton University \\
+			\url{wenchang@princeton.edu} \\
+			\url{+1 (646)801-8086} \\
+			\url{https://scholar.princeton.edu/wenchang}\\
 		}
+%		\contact{
+%			Postdoctoral Scholar \\
+%			Department of Earth System Science,
+%			University of California, Irvine \\
+%			2101F Croul Hall, Irvine, CA 92697, US \\
+%			yang.wenchang@uci.edu \\
+%			+1 (646)801-8086 \\
+%			\url{https://www.ess.uci.edu/~wenchay}\\
+%		}
 %                 \contact{
 %			Lamont-Doherty Earth Observatory \\
 %			\cu{}\\
-%			61 Route 9W, Oceanography 105F,  Palisades, NY 10964, US \\ 
+%			61 Route 9W, Oceanography 105F,  Palisades, NY 10964, US \\
 %			wyang@ldeo.columbia.edu \\
 %			\url{http://www.ldeo.columbia.edu/~wyang}\\
 %		}
 	}{}
-	
+
 	\ifthenelse{\equal{#1}{withPhoto}}{
-		\name{\flushleft Wenchang Yang}
-		\contact{\flushleft
-			Postdoctoral Scholar \\
-			Department of Earth System Science \\
-			University of California, Irvine \\
-			2101E Croul Hall, Irvine, CA 92697, US \\
-			yang.wenchang@uci.edu \\
-			+1 (646)801-8086 \\
-			\url{http://www.ess.uci.edu/~wenchay}\\
-		}
+		\hspace{-4ex}
+		\includegraphics[width=1.5in]{Yang.jpg}
+		
+		\vspace{-1.25in} \hspace{1.6in}
+		\begin{minipage}{6in}
+            		\contact{\flushleft 
+				{\Large\bf Wenchang Yang} \\
+				Postdoctoral Research Associate \\ 
+            			Department of Geosciences, Princeton University \\ 
+            			\url{wenchang@princeton.edu} \\
+            			\url{+1 (646)801-8086} \\
+            			\url{https://scholar.princeton.edu/wenchang}\\
+            		}
+		\end{minipage}
+%		\contact{\flushleft
+%			Postdoctoral Scholar \\
+%			Department of Earth System Science \\
+%			University of California, Irvine \\
+%			2101F Croul Hall, Irvine, CA 92697, US \\
+%			yang.wenchang@uci.princeton.edu \\
+%			+1 (646)801-8086 \\
+%			\url{https://www.ess.uci.edu/~wenchay}\\
+%		}
 %                 \contact{\flushleft
 %			Lamont-Doherty Earth Observatory \\
 %			\cu{}\\
-%			61 Route 9W, Oceanography 105F,  Palisades, NY 10964, US \\ 
-%			wyang@ldeo.columbia.edu\\ 
+%			61 Route 9W, Oceanography 105F,  Palisades, NY 10964, US \\
+%			wyang@ldeo.columbia.edu\\
 %			\url{http://www.ldeo.columbia.edu/~wyang}\\
 %		}
-		\vspace{-0.28\textwidth}\hfill
-		\includegraphics[width=0.28\textwidth]{YangTieSquare.jpg}
-		\vspace{-0.0\textwidth}
+%		\vspace{-0.28\textwidth}\hfill
+%		\includegraphics[width=0.28\textwidth]{Yang.jpg}
+%		\vspace{-0.0\textwidth}
 	}{}
 }
-%\titleMinipage{withPhoto}
-\titleMinipage{withoutPhoto}
+\titleMinipage{withPhoto}
+%\titleMinipage{withoutPhoto}
 
-
+\vspace{1ex}
 \section{Research Interests}
 \begin{itemize}[leftmargin=4ex]
-	\item Climate Variability, Extreme Weather and Climate
-	\item Arctic Climate, Regional Hydroclimate, Precipitation and Drought
+	\item Arctic Climate, East African Hydroclimate and Drought
+	\item Climate Variability, Climate Dynamics, Climate Change, Extreme Weather and Climate
 	\item ITCZ, Global Monsoons, Storm Tracks, Idealized Climate Models
 \end{itemize}
 
 
 \section{Education}
 \begin{itemize}[leftmargin=10ex]
-	\item[2014] Ph.D. in Atmospheric Sciences, \cu{}
+	\item[2014] Ph.D., \cu{}
 	\begin{itemize}[leftmargin=0ex,label={},noitemsep,nolistsep]
-		\item Thesis: \phdThesis{}.  Advisors: Prof.~\richard{} and Prof.~\cane{}
+		\item Thesis: \phdThesis{}.  
+		Advisors: Prof.~\richard{} and Prof.~\cane{}
 		\end{itemize}
-	\item[2011] M.Phil., \cu{}
-	\item[2007] M.S., \pku{}, China. Advisor: Prof.~\benkui{}
+%	\item[2011] M.Phil., \cu{}
+	\item[2007] M.S., \pku{}, China % Advisor: Prof.~\benkui{}
 	\item[2004] B.S., \pku{}, China
+	\end{itemize}
+	
+%\section{Research Experience}
+\section{Employment}
+\begin{itemize}[leftmargin=10ex, itemsep=0ex]
+	\item[2017]Dec -- , Postdoctoral Research Associate, \pu{}
+	\item[2015]Jan -- 2017 Nov, Postdoctoral Scholar, \uci{}
+%	\begin{itemize}[leftmargin=0ex]
+%		\item  Advisor: Prof.~\gudrun{}
+%		\end{itemize}
+%	\item[2014]Nov -- 2014 Dec, Postdoc, Columbia University
+%	\begin{itemize}[leftmargin=0ex]
+%		\item  Advisor: Dr.~\brad{}
+%		\end{itemize}
+%	\item[2007] Sep -- 2014 Oct,  Research  Assistant, Columbia University
+%	\begin{itemize}[leftmargin=0ex]
+%		\item  Advisors: Prof.~\richard{} and Prof.~\cane{}
+%		\end{itemize}
+%	\item[2004] Sep -- 2007 Jun, Research  Assistant, Peking University, China
+%	\begin{itemize}[leftmargin=0ex]
+%		\item  Advisor: Prof.~\benkui{}
+%		\end{itemize}
 	\end{itemize}
 
 
 \section{Publications}
 %\begin{etaremune}[itemsep=0.3em,parsep=0pt, leftmargin=10ex]
 \begin{itemize}[leftmargin=10ex, itemsep=1ex]
+	\item[2017] \textbf{Yang,~W.}, G.~Magnusdottir (2017): Springtime Extreme Moisture Transport into the Arctic and its Impact on Sea Ice Concentration. \emph{J. Geophys. Res. Atmos.}, \textbf{122}, 5316--5329, \doi{10.1002/2016JD026324}
+
 	\item[2016] \textbf{Yang,~W.}, G.~Magnusdottir (2016): Interannual Signature in Daily ITCZ States in the East Pacific in Boreal Spring, \newblock \emph{J. Clim.},  \textbf{29}, 8013--8025, \doi{10.1175/JCLI-D-16-0395.1}
-	
+
 	\item[2015] \textbf{Yang, W.}, R.~Seager, M.~A.~Cane, and B.~Lyon (2015): The Rainfall Annual Cycle Bias over East Africa in CMIP5 Coupled Climate Models.
 \newblock \emph{J. Clim.}, \textbf{28}, 9789--9802, \doi{10.1175/JCLI-D-15-0323.1}
 
@@ -179,48 +228,25 @@
 
 \section{Manuscripts}
 \begin{itemize}[leftmargin=10ex, itemsep=1ex]
-	\item[2017] \textbf{Yang,~W.}, G.~Magnusdottir (2017): Springtime Moisture Transport and September Arctic Sea Ice in Observations and Models. \textbf{in preparation}
-	
-	\item[2017] \textbf{Yang,~W.}, G.~Magnusdottir (2017): Springtime Extreme Moisture Transport into the Arctic through the Atlantic Pathway. \emph{J. Geophys. Res. Atmos.}, \textbf{in revision}
+	\item[2017] \textbf{Yang,~W.}, G.~Magnusdottir (2017): Year-to-year Sea Ice Extent Minimum Variability and its Preconditions in Spring and Summer. \textbf{in review}
+
 \end{itemize}
 
 
-\section{Research Experience}
-%\section{Employment}
-\begin{itemize}[leftmargin=10ex, itemsep=1ex]
-	\item[2015]Jan -- Present, Postdoctoral Scholar, \uci{}
-	\begin{itemize}[leftmargin=0ex]
-		\item  Advisor: Prof.~\gudrun{}
-		\end{itemize}
-	\item[2014]Nov -- 2014 Dec, Postdoc, Columbia University
-	\begin{itemize}[leftmargin=0ex]
-		\item  Advisor: Dr.~\brad{}
-		\end{itemize}
-	\item[2007] Sep -- 2014 Oct,  Research  Assistant, Columbia University
-	\begin{itemize}[leftmargin=0ex]
-		\item  Advisors: Prof.~\richard{} and Prof.~\cane{}
-		\end{itemize}
-	\item[2004] Sep -- 2007 Jun, Research  Assistant, Peking University, China
-	\begin{itemize}[leftmargin=0ex]
-		\item  Advisor: Prof.~\benkui{}
-		\end{itemize}
-	\end{itemize}
-
-
-\section{Teaching Experience} 
+\section{Teaching Experience}
 \begin{itemize}[leftmargin=10ex, itemsep=1ex]
 	\item[2009] Fall, Teaching  Assistant (with John Sawicki), Columbia University
 	\begin{itemize}[leftmargin=0ex]
 		\item \textit{Quantitative Models of Climate-Sensitive Natural and Human Systems}
-		\item Instructors: Prof.~\mingfang{} and Prof. Anthony G. Barnston 
+		\item Instructors: Prof.~\mingfang{} and Prof. Anthony G. Barnston
 		\end{itemize}
-		
+
 	\item[2008] Fall, Teaching  Assistant (with Daniel Ruiz Carrascal),  Columbia University
 	\begin{itemize}[leftmargin=0ex]
 		\item \textit{Quantitative Models of Climate-Sensitive Natural and Human Systems}
-		\item Instructors: Prof.~\mingfang{} and Prof. Anthony G. Barnston 
+		\item Instructors: Prof.~\mingfang{} and Prof. Anthony G. Barnston
 		\end{itemize}
-		
+
 	\item[2006] Spring, Teaching  Assistant, Peking University, China
 	\begin{itemize}[leftmargin=0ex]
 		\item \textit{Atmospheric Dynamics}
@@ -232,7 +258,7 @@
 \section{Presentations}
 \begin{itemize}[leftmargin=10ex, itemsep=1ex]
     %\setlength\itemsep{0.5em}
-    \item[2016]Dec 16, \meetingName{American Geophysical Union Fall Meeting}
+    \item[2016]Dec 16, \meetingName{American Geophysical Union Fall Meeting}, San Francisco
     \begin{itemize}[leftmargin=4ex, parsep=0ex]
 		\item \ptitle{Springtime Extreme Moisture Transport into the Arctic - Its Impact and Associated Large-scale Atmospheric circulation}
 		\end{itemize}
@@ -241,68 +267,68 @@
 	\begin{itemize}[leftmargin=4ex]
 		\item \ptitle{Decadal Variability of East African Hydroclimate in Observations and Models and the Implication for the Future Projection}
 		\end{itemize}
-	
-	\item[2015]Dec 14 (poster),  \meetingName{American Geophysical Union Fall Meeting}
+
+	\item[2015]Dec 14 (poster),  \meetingName{American Geophysical Union Fall Meeting}, San Francisco
 	\begin{itemize}[leftmargin=4ex]
 		\item \ptitle{The East Pacific Double ITCZ during Boreal Spring in Observations.}
 		\end{itemize}
-	
+
 	\item [2014] Oct 27,  \meetingName{Columbia University PhD Thesis Defense}, Seismology Room at Lamont.
 	\begin{itemize}[leftmargin=4ex]
 		\item \ptitle{The Hydroclimate of East Africa: Seasonal cycle, Decadal Variability, and Human-induced Climate Change}
 		\end{itemize}
-	
-	\item[\phantom{2014}] Sep 25, \meetingName{AOCD Seminar}, Yale
+
+	\item[\phantom{2014}] Sep 25, \meetingName{AOCD Seminar}, Yale University
 	 \begin{itemize}[leftmargin=4ex]
 		\item \ptitle{Why is East Africa Drying during the Spring Rainy Season in Recent Decades?}
 		\end{itemize}
 
-	\item [\phantom{2014}]Jun 04,  \meetingName{GFDL Seminar},  GFDL, Princeton
+	\item [\phantom{2014}]Jun 04,  \meetingName{GFDL Seminar}, Princeton University
 	 \begin{itemize}[leftmargin=4ex]
 		\item \ptitle{East African Precipitation and Droughts: from Decadal Variability to Annual Cycle}
 		\end{itemize}
 
-	\item[\phantom{2014}]May 28,  \meetingName{ GloDecH Meeting}, Lamont
+	\item[\phantom{2014}]May 28,  \meetingName{ GloDecH Meeting}, Columbia University
 	\begin{itemize}[leftmargin=4ex]
 		\item \ptitle{The Dual Peaked Seasonal Cycle of Precipitation Over Tropical East Africa}
 		\end{itemize}
-	
-	\item[2013] Oct 9-13 (poster), \meetingName{American Geophysical Union Fall Meeting}
+
+	\item[2013] Dec 9-13 (poster), \meetingName{American Geophysical Union Fall Meeting}, San Francisco
 	\begin{itemize}[leftmargin=4ex]
 		\item \ptitle{The East African Long Rains in Observations and Models}
 		\end{itemize}
-	
-	\item [\phantom{2013}] Jun 12, \meetingName{GloDecH Meeting}
+
+	\item [\phantom{2013}] Jun 12, \meetingName{GloDecH Meeting}, Columbia University
 	\begin{itemize}[leftmargin=4ex]
-		\item \ptitle{Lamont Decadal Variability of the East African Long Rains in Obs. and Models}
+		\item \ptitle{Decadal Variability of the East African Long Rains in Obs. and Models}
 		\end{itemize}
-			
-	\item [2012] Dec 3-7 (poster), \meetingName{American Geophysical Union Fall Meeting}
+
+	\item [2012] Dec 3-7 (poster), \meetingName{American Geophysical Union Fall Meeting}, San Francisco
 	\begin{itemize}[leftmargin=4ex]
 		\item \ptitle{Zonal Momentum Balance in the Tropical Atmospheric Circulation during the Global Monsoon Mature Months}
 		\end{itemize}
-	
-	\item [2011] Dec 5-9 (poster), \meetingName{American Geophysical Union Fall Meeting}
+
+	\item [2011] Dec 5-9 (poster), \meetingName{American Geophysical Union Fall Meeting}, San Francisco
 	\begin{itemize}[leftmargin=4ex]
 		\item \ptitle{Simulating and Diagnosing the Dynamics of the Global Monsoon in a Simple Tropical Atmosphere Model}
-		\end{itemize} 
-	 
+		\end{itemize}
+
 	\item [\phantom{2011}] Jun 20, \meetingName{Atmosphere-Ocean Science Days}, MIT
 	\begin{itemize}[leftmargin=4ex]
 		\item \ptitle{Global Monsoon Simulation in a Simple Numerical Model}
 		\end{itemize}
-	
-	\item [2009] Apr 09, \meetingName{Lamont Graduate Oral Meeting}
+
+	\item [2009] Apr 09, \meetingName{Columbia University Graduate Oral Meeting}
 	\begin{itemize}[leftmargin=4ex]
 		\item \ptitle{Trends and Patterns of Different Monsoons over the Period of 1979--2007}
 		\end{itemize}
-	
+
 	\item [2007]May 26,  \meetingName{Peking University M.S. Thesis Defence Meeting}
 	\begin{itemize}[leftmargin=4ex]
 		\item \ptitle{Baroclinic Wave Packets in an Extended Quasi-geostrophic Two-layer Model}
 		\end{itemize}
-	
-	\item [2007]Apr 19, \meetingName{Graduate Student Research Meetings, Department of AOS, Peking University}
+
+	\item [2007]Apr 19, \meetingName{Peking University Graduate Student Research Meetings}
 	\begin{itemize}[leftmargin=4ex]
 		\item \ptitle{A Numerical Solution to the Quasi-geostrophic Two-layer Model}
 		\end{itemize}
@@ -310,29 +336,29 @@
 \end{itemize}
 
 
-\section{Professional Service} 
+\section{Professional Services}
 \begin{itemize}[leftmargin=4ex, itemsep=1ex]
 	%\setlength\itemsep{0.5em}
 	\item Journal Reviews
     	\begin{itemize}[leftmargin=4ex]
-	\item \textit{Nature Climate Change, Climate Dynamics}
+	\item \textit{Nature Climate Change, Scientific Reports, Climate Dynamics}
     	\item \textit{Journal of Climate, Journal of the Atmospheric Sciences}
 	\item \textit{Geophysical Research Letters, Journal of Geophysical Research-Atmospheres}
 	\item \textit{Quarterly Journal of the Royal Meteorological Society, International Journal of Climatology}
-	\item \textit{Journal of Applied Meteorology and Climatology}	
+	\item \textit{Journal of Applied Meteorology and Climatology, Advances in Atmospheric Sciences}
     	\end{itemize}
-	
+
 	\item Other Services
 	\begin{itemize}[leftmargin=10ex]
 		\item[2015] Judge for the Outstanding Student Paper Awards in the AGU Fall Meeting
 		\item[2010]-- 2011, Coordinator for the Division of Ocean and Climate Physics Seminars at Lamont, Columbia University
 	\end{itemize}
 \end{itemize}
-	
+
 
 \section{Professional Associations}
 \begin{itemize}[leftmargin=4ex]
-	\item Member of the American Geophysical Union (AGU) 
+	\item Member of the American Geophysical Union (AGU)
 	\item Member of the American Meteorology Society (AMS)
 \end{itemize}
 
@@ -340,21 +366,23 @@
 \section{Awards and Honors}
 \begin{itemize}[leftmargin=10ex, itemsep=0ex]
 	\item[2007] Faculty Fellowship of GSAS, Columbia University
-	
-	\item[\phantom{2007}] Second Prize in ``Zhong Shengbiao Education Foundation'' Student  Academic Forum 
-	
-	\item[2005] May 4th Scholarship	
-	
-	\item[2004] Outstanding Graduate of All Universities in Beijing City
-	
-	\item[\phantom{2004}] Outstanding Graduate of Peking University
-	
+
+	\item[\phantom{2007}] Second Prize in ``Zhong Shengbiao Education Foundation'' Student  Academic Forum
+
+	\item[2005] May 4th Scholarship
+
+	\item[2004] Graduate of All Universities in Beijing City with Highest Honors
+
+	\item[\phantom{2004}] Graduate of Peking University with Highest Honors
+
 	\item[2002] Triple-A Student of Peking University
 	
+	\item[2001] Triple-A Student of Peking University
+
 	\item[2001]-- 2004, Cyrus Tang Foundation Scholarship
-		
+
 	\item[2000] Triple-A Student of High Schools in Jiangsu Province,  China
-	
+
 	\item[1999] First Prize in National High School Mathematics Olympiad, Jiangsu, China
 
 	\item[\phantom{1999}] Second Prize in National High School Biology Olympiad, Jiangsu, China
@@ -381,66 +409,62 @@
 %	\indentitem{\LaTeX{}, Bib\TeX{}, Apple iWork, Microsoft Office}
 
 
-\section{References Available to Contact}
-\begin{itemize}[leftmargin=4ex, itemsep=1ex]
-	\item Dr.~\richard{} (PhD advisor)
-	\begin{itemize}
-		\item Palisades Geophysical Institute/Lamont Research Professor 
-		\item Lamont-Doherty Earth Observatory, \cu{}
-    		\item Email: seager@ldeo.columbia.edu
-		\item Phone: +1 (845) 365-8743 
-    	 	\item Address: 104D Oceanography, PO Box 1000, 61 Route 9W, Palisades, NY 10964-8000, US 
-	 	\end{itemize}
-	
-	\item Dr.~\cane{} (PhD advisor)
-	\begin{itemize}
-		\item G. Unger Vetlesen Professor
-		\item Department of Earth and Environmental Sciences, \cu{}
-    		\item Email: mcane@ldeo.columbia.edu
-		\item Phone: +1 (845) 365-8344 
-    	 	\item Address: 105B Oceanography, PO Box 1000, 61 Route 9W, Palisades, NY 10964-8000, US 
-	 	\end{itemize}
-	
-	\item Dr.~\brad{}  
-	\begin{itemize}
-		\item Associate Research Professor
-		\item University of Maine
-    		\item Email: bradfield.lyon@maine.edu
-		\item Phone: +1 (207) 581-2241
-    	 	\item Address: 210 Sawyer Environmental Research Center, Orono, ME 04469, US 
-	 	\end{itemize}
-	
-	\item Dr.~\mingfang{}
-	\begin{itemize}
-		\item Lamont Research Professor
-		\item Lamont-Doherty Earth Observatory, \cu{}
-    		\item Email: ting@ldeo.columbia.edu
-		\item Phone: +1 (845) 365-8157 
-    	 	\item Address: 104C Oceanography, PO Box 1000, 61 Route 9W, Palisades, NY 10964-8000, US 
-	 	\end{itemize}
-	
-	\item Dr.~William Boos
-	\begin{itemize}
-		\item Associate Professor
-		\item Department of Geology and Geophysics, Yale University
-    		\item Email: william.boos@yale.edu
-		\item Phone: +1 (203) 432-2627
-    	 	\item Address: P.O. Box 208109, New Haven, CT 06520-8109, US 
-	 	\end{itemize}
-		
-	\item Dr.~\gudrun{}
-	\begin{itemize}
-		\item Professor
-		\item Department of Earth System Science, \uci{}
-    		\item Email: gudrun@uci.edu
-		\item Phone: +1 (949) 824-3520
-    	 	\item Address: 3321 Croul Hall, Irvine, CA 92697-3100, US 
-	 	\end{itemize}
-	 
-	 \end{itemize}
- 
-\end{document} 
+%\section{References Available to Contact}
+%\begin{itemize}[leftmargin=4ex, itemsep=1ex]
+%	\item Dr.~\richard{} (PhD advisor)
+%	\begin{itemize}
+%		\item Palisades Geophysical Institute/Lamont Research Professor
+%		\item Lamont-Doherty Earth Observatory, \cu{}
+%    		\item Email: seager@ldeo.columbia.edu
+%		\item Phone: +1 (845) 365-8743
+%    	 	\item Address: 104D Oceanography, PO Box 1000, 61 Route 9W, Palisades, NY 10964-8000, US
+%	 	\end{itemize}
+%
+%	\item Dr.~\cane{} (PhD advisor)
+%	\begin{itemize}
+%		\item G. Unger Vetlesen Professor
+%		\item Department of Earth and Environmental Sciences, \cu{}
+%    		\item Email: mcane@ldeo.columbia.edu
+%		\item Phone: +1 (845) 365-8344
+%    	 	\item Address: 105B Oceanography, PO Box 1000, 61 Route 9W, Palisades, NY 10964-8000, US
+%	 	\end{itemize}
+%
+%	\item Dr.~\brad{}
+%	\begin{itemize}
+%		\item Associate Research Professor
+%		\item University of Maine
+%    		\item Email: bradfield.lyon@maine.edu
+%		\item Phone: +1 (207) 581-2241
+%    	 	\item Address: 210 Sawyer Environmental Research Center, Orono, ME 04469, US
+%	 	\end{itemize}
+%
+%	\item Dr.~\mingfang{}
+%	\begin{itemize}
+%		\item Lamont Research Professor
+%		\item Lamont-Doherty Earth Observatory, \cu{}
+%    		\item Email: ting@ldeo.columbia.edu
+%		\item Phone: +1 (845) 365-8157
+%    	 	\item Address: 104C Oceanography, PO Box 1000, 61 Route 9W, Palisades, NY 10964-8000, US
+%	 	\end{itemize}
+%
+%	\item Dr.~William Boos
+%	\begin{itemize}
+%		\item Associate Professor
+%		\item Department of Geology and Geophysics, Yale University
+%    		\item Email: william.boos@yale.edu
+%		\item Phone: +1 (203) 432-2627
+%    	 	\item Address: P.O. Box 208109, New Haven, CT 06520-8109, US
+%	 	\end{itemize}
+%
+%	\item Dr.~\gudrun{}
+%	\begin{itemize}
+%		\item Professor
+%		\item Department of Earth System Science, \uci{}
+%    		\item Email: gudrun@uci.edu
+%		\item Phone: +1 (949) 824-3520
+%    	 	\item Address: 3321 Croul Hall, Irvine, CA 92697-3100, US
+%	 	\end{itemize}
+%
+%	 \end{itemize}
 
-
-
-
+\end{document}
